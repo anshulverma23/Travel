@@ -31,7 +31,7 @@ const app = express();
 app.use(helmet());
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || "https://travel-gilt-five.vercel.app/",
+    origin: process.env.FRONTEND_URL || "https://travel-gilt-five.vercel.app",
     credentials: true,
   })
 );
@@ -63,7 +63,7 @@ app.use("/api/contact", contactRoutes);
 app.use(notFound);
 app.use(errorHandler);
 
-const PORT = process.env.PORT || travel-i8wm.onrender.com ;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server running in ${process.env.NODE_ENV || "development"} mode on port ${PORT}`);
 });
