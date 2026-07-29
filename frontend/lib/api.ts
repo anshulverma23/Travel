@@ -1,4 +1,4 @@
-export const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000/api"
+export const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://travel-i8wm.onrender.com/api"
 
 const TOKEN_KEY = "india_travel_token"
 
